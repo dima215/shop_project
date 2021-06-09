@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.row{
+    margin: 0 -15px;
+}
+.row:after{
+content: "";
+display: block;
+clear: both;
+}
+.col-md-3{
+    width: 25%;
+}
+.col-md-6{
+    width: 50%;
+}
+[class*="col-"]{
+    float: left;
+    padding: 0 15px;
+}
