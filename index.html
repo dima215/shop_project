@@ -8,7 +8,7 @@
     <title>Shop project</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -29,6 +29,7 @@
                         <ul class="menu">
                             <li><a href="">Home</a></li>
                             <li><a href="">Products</a>
+                                <div class="bird">&circ;</div>
                                 <ul class="submenu">
                                     <li><a href="#">Lorem ipsum dolor</a></li>
                                     <li><a href="#">Sit amet</a></li>
@@ -45,17 +46,24 @@
                     </nav>
                 </div>
                 <div class="col-md-3">
-                    <form class="find" action="" method="get">
-                        <input type="search" name="search" id="" placeholder="search">
-                        <div class="find-img">
-                            <img src="images/icon (4).png" alt="">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <form class="search" action="" method="get">
+                                <input type="text" name="search" id="" placeholder="search">
+                                <button class="search-button" type="submit">
+                                    <img src="images/icon (4).png" alt="">
+                                </button>
+                            </form>
                         </div>
-                    </form>
-                    <div class="basket">
-                        <a class="basket-a" href="#">
-                            <img class="basket-img-1" src="images/icon (1).png" alt="">
-                            <img class="basket-img-2" src="images/icon (2).png" alt="">
-                        </a>
+                        <div class="col-md-3">
+                            <div class="cart">
+                                <a href="">
+                                    <img class="cart-img1" src="images/icon (1).png" alt="">
+                                    <img class="cart-img2" src="images/icon (2).png" alt="">
+                                </a>
+                                <div class="product-count">0</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

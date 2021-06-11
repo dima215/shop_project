@@ -5,6 +5,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 21px;
+    font-weight: 300;
     background-image: url(images/patt.png);
 }
 
@@ -34,10 +35,15 @@ body {
 
 .col-md-3 {
     width: 25%;
+    margin-top: 5px;
 }
 
 .col-md-6 {
     width: 50%;
+}
+
+.col-md-9 {
+    width: 75%;
 }
 
 [class*="col-"] {
@@ -51,8 +57,23 @@ body {
     border-left: 1px solid #2c71b8;
     position: relative;
 }
-.menu>li:last-child{
- border-right: 1px solid #2c71b8
+
+.menu>li:last-child {
+    border-right: 1px solid #2c71b8
+}
+.menu>li:nth-child(2){
+    position: relative;
+}
+
+
+.bird {
+    position: absolute;
+    top: 0px;
+    left: 115px;
+    color: #2c71b8;
+    transform: rotate(180deg);
+    font-size: 28px;
+    font-weight: 500;
 }
 
 .menu a {
@@ -62,40 +83,121 @@ body {
     line-height: 50px;
     text-decoration: none;
     color: #2c71b8;
-    font-weight: 300;
+
 }
-.menu>li:hover a{
+
+.menu>li:hover a {
     background-color: #2c71b8;
     color: white;
 }
-.menu>li:hover .submenu{
+
+.menu>li:hover .submenu {
     display: block;
 }
-.submenu{
+.menu>li:hover .bird {
+    color: white;
+}
+
+.submenu {
     display: none;
     position: absolute;
     width: 286px;
     left: -1px;
     top: 55px;
     margin-top: -5px;
-    
+
 }
-.submenu li{
+
+.submenu li {
     background-color: #2c71b8;
-    
+
 }
-.submenu a{
+
+.submenu a {
     color: white;
     text-align: left;
     padding-left: 30px;
 }
-.submenu li:hover a{
-background-color: white;
-color: #2c71b8;
+
+.submenu li:hover a {
+    background-color: white;
+    color: #2c71b8;
 }
-.find{
-    float: left;
+
+
+.search {
+    width: 200px;
+    height: 40px;
+    border: 1px solid #2c71b8;
+    position: relative;
 }
-.basket{
-    float: right;
+
+.search input {
+
+    display: block;
+    border: none;
+    padding: 0 0 3px 20px;
+    background-color: inherit;
+    font: 300 21px Roboto;
+    height: 100%;
+    width: 160px;
+}
+
+.search input::placeholder {
+    color: #2c71b8;
+}
+
+.search-button {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 30px;
+    height: 30px;
+    background-color: #2c71b8;
+    border: none;
+}
+.cart-img1,
+.cart-img2{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.cart-img2{
+    display: none;
+}
+
+.cart {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    margin: -5px 0 0 5px;
+    
+    
+}
+.cart a{
+    display: block;
+}
+.cart:hover{
+    background-color: #2c71b8;
+     
+}
+.cart:hover .cart-img2{
+    display: block;
+    transform: scale(1.15);
+}
+
+.product-count{
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: #2c71b8;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
 }
