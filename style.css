@@ -35,6 +35,10 @@ body {
 
 .col-md-3 {
     width: 25%;
+
+}
+
+.m5px {
     margin-top: 5px;
 }
 
@@ -213,4 +217,90 @@ body {
 .slider {
     height: 400px;
     background-color: rgba(0, 0, 0, 0.20);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.parameters {
+    height: 843px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-right: 1px solid white;
+}
+
+
+
+.h165 {
+    height: 165px;
+}
+
+.pos {
+    position: relative;
+}
+
+.adress {
+    position: absolute;
+    left: 0px;
+    top: 30px;
+    width: 550px;
+}
+.adress>p, .adress a{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.adress a{
+    text-decoration: none;
+}
+.adress a:last-child{
+    text-decoration: underline;
+}
+.adress h1{
+    font-size: 48px;
+    line-height: 92px;
+    color: white;
+    font-weight: 700;
+}
+
+[class*="img-"] {
+    position: relative;
+    height: 180px;
+    background-color: rgba(255, 255, 255, 0.75);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-1{
+    background-image: url(images/icon\ \(17\).png);
+}
+.img-2 {
+    background-image: url(images/icon\ \(9\).png);
+}
+.img-3 {
+    background-image: url(images/icon\ \(10\).png);
+}
+    
+.rot-left,
+.rot-right {
+    position: absolute;
+    width: 325px;
+    height: 100px;
+    border-top: 1px solid white;
+    top: 0px;
+    transform-origin: 0px 0px;
+    transform: rotate(33.7deg);
+}
+
+.rot-left {
+    left: 0px;
+}
+
+.rot-right {
+    right: 0px;
+    transform-origin: 100% 0px;
+    transform: rotate(-33.7deg);
+}
+
+.product {
+    height: 473px;
+    background-color: rgba(44, 113, 184, 0.75);
+    border: 1px solid white;
 }
