@@ -61,6 +61,10 @@ let scrollHeight = Math.max(
 console.log(scrollHeight / 2);
 console.log(window.scrollY);
 
-if (window.scrollY > scrollHeight / 2) {
+window.onscroll = function () {
+    let scrolled = +window.pageYOffset;
+    if (scrolled > scrollHeight / 2) {
     openModal();
+    };
 };
+
