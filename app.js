@@ -65,7 +65,7 @@ console.log(counterOfClicksClose);
 
 window.onscroll = function () {
     let scrolled = +window.pageYOffset;
-    if (counterOfClicksClose == 0 && scrolled > scrollHeight / 2) {
+    if (counterOfClicksClose == 0 && (scrolled + 400) > (scrollHeight / 2)) {
     openModal();
     };
 };
