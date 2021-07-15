@@ -17,6 +17,7 @@ for(let i = 0; i < addToCartBtns.length; i++) {
 let modal = document.querySelector(".modal");
 let closeBtn = document.querySelector(".btn-close");
 let moreDetailsBtns = document.querySelectorAll(".btn-more-details");
+let counterOfClicksClose = 0;
 
 moreDetailsBtns.forEach(btn => {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
     btn.addEventListener("click", openModal)
@@ -31,6 +32,7 @@ function openModal() {
 function closeModal() {
     modal.classList.add("hide");
     modal.classList.remove("show");
+    return counterOfClicksClose++;
 };
 
 modal.addEventListener("click", function (e) {
@@ -59,11 +61,11 @@ let scrollHeight = Math.max(
   document.body.clientHeight, document.documentElement.clientHeight
 );
 console.log(scrollHeight / 2);
-console.log(window.scrollY);
+console.log(counterOfClicksClose);
 
 window.onscroll = function () {
     let scrolled = +window.pageYOffset;
-    if (scrolled > scrollHeight / 2) {
+    if (counterOfClicksClose == 0 && scrolled > scrollHeight / 2) {
     openModal();
     };
 };
