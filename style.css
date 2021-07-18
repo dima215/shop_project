@@ -114,6 +114,7 @@ body {
 
 .menu>li:hover .submenu {
     display: block;
+    z-index: 1010;
 }
 
 .menu>li:hover .bird {
@@ -241,6 +242,83 @@ body {
     border-top: 1px solid white;
     border-bottom: 1px solid white;
 }
+.slider>.container,
+.slider .row,
+.slider-block {
+    height: 100%;
+}
+
+.slider-block > div{
+    /*padding: 150px 0;
+    text-align: center;
+    color: white;
+    font-size: 40px;*/
+    font-size: 100px;
+    letter-spacing: 10px;
+    line-height: 400px;
+    color: #ffffff;
+    font-weight: 100;
+    font-family: "Roboto";
+    text-align: center;
+    height: 100%;
+}
+
+.slick-dots{
+    bottom: 20px;
+}
+.slick-dots li button{
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+    margin: -1px;
+}
+.slick-dots li{
+    margin: 0 13px;
+    width: 10px;
+    height: 10px;
+}
+
+.slick-dots li button:before{
+    content: none;
+}
+li.slick-active{
+    background-color: #fff;
+    
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 100px;
+    font-family: "Roboto";
+    font-weight: 100;
+    line-height: 18px;
+}
+
+.slick-prev {
+    left: 15px;
+    z-index: 10;
+}
+.slick-next {
+    right: 40px;
+    z-index: 10;
+}
+
+
+.slick-prev:before {
+    content: '<';
+}
+
+.slick-next:before {
+    content: '>';
+}
+
+
+
+
+
+
+
+
 
 .parameters {
     height: 843px;
@@ -476,7 +554,7 @@ body {
     font-size: 48px;
     font-weight: 700;
     text-align: center;
-    margin: 15px 0;
+    /*margin: 15px 0;*/
 }
 
 .product-price>sup {
@@ -585,3 +663,4 @@ body {
 .show{
     display: block;
 }
+
