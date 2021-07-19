@@ -120,7 +120,6 @@ for(let i = 0; i < quantityInputs.length; i++) {
         +quantityInputs[i].value++;
             if (+quantityInputs[i].value < 5) {
                 decrementBtns[i].disabled = false;
-                incrementBtns[i].disabled = false;
             } else {
                 incrementBtns[i].disabled = true;
     };
@@ -128,7 +127,6 @@ for(let i = 0; i < quantityInputs.length; i++) {
     decrementBtns[i].addEventListener("click", function () {
         +quantityInputs[i].value--;
             if (+quantityInputs[i].value > 0) {
-                decrementBtns[i].disabled = false;
                 incrementBtns[i].disabled = false;
             } else {
                 decrementBtns[i].disabled = true;
